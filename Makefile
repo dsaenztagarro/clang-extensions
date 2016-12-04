@@ -1,7 +1,9 @@
 .PHONY: main
 
+CC=clang
+
 main: main.o
 
 main.o: src/main.c
 	mkdir -p bin
-	cc src/main.c -o bin/main
+	$(CC) src/main.c -o bin/main
